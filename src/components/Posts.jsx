@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { useSelector } from "react-redux/es/exports";
+import { useSelector } from "react-redux";
 
 import Post from "./Post";
 

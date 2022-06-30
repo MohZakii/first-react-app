@@ -1,0 +1,251 @@
+/* start global */
+.py-100 {
+  padding: 100px;
+}
+.secTitle:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ccc;
+  width: 10%;
+  height: 2px;
+}
+.secTitle h1 {
+  font-size: 45px;
+}
+.secTitle span {
+  font-size: 14px;
+  letter-spacing: 3px;
+  display: block;
+  margin: 25px 0;
+}
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fa225c88;
+  transform: scaleX(0);
+  transition: 0.4s ease-in-out;
+}
+.inner span {
+  font-size: 23px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.image:hover .inner {
+  transform: scaleX(1);
+}
+/* end global */
+/* start header */
+header {
+  height: 100vh;
+  background-image: url(../media/images/banner_images.webp);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #20232c;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease-in-out;
+  z-index: 555;
+}
+.navigation ul li {
+  list-style-type: none;
+  text-align: center;
+}
+.navigation li a {
+  font-size: 40px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 25px;
+  display: block;
+  letter-spacing: 2px;
+  transition: 0.4s ease-in-out;
+}
+.navigation li a.active,
+.navigation li a:hover {
+  color: #fa225b;
+}
+.navigation.open {
+  opacity: 1;
+  visibility: visible;
+}
+nav {
+  transition: 0.4s ease-in-out;
+}
+nav .burger-button .lines {
+  width: 15px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 6px;
+  transition: 0.4s;
+}
+nav.scroll {
+  background-color: #20232c;
+  box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 3px;
+  transition: 0.4s ease-in-out;
+}
+.logo,
+.burger-button {
+  z-index: 11111;
+  cursor: pointer;
+}
+nav .burger-button.rotate .lines:first-child {
+  transform: rotate(45deg) translateY(6px);
+  background-color: #fa225b;
+}
+nav .burger-button.rotate .lines:nth-child(2) {
+  display: none !important;
+}
+nav .burger-button.rotate .lines:last-child {
+  transform: rotate(-45deg) translateY(-5px);
+  background-color: #fa225b;
+}
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero h4 {
+  letter-spacing: 6px;
+  font-size: 20px;
+  color: #b4b2b4;
+}
+.hero h1 {
+  color: #e62e58;
+  font-size: 120px;
+}
+.hero span {
+  letter-spacing: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+}
+/* end header */
+/* start about */
+.about {
+  background-color: #20232c;
+  color: white;
+}
+/* End about */
+/* start whyWork */
+.whyWork {
+  background-color: #191c23;
+  color: white;
+}
+.whyWork .circle {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
+.recentWork {
+  background-color: #96c577;
+  color: white;
+  padding-top: 100px;
+}
+.recentWork button {
+  background-color: #fa225b;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 4px;
+  transition: 0.4s ease-in-out;
+}
+.recentWork button:hover {
+  background-color: #fff;
+  color: #fa225b;
+}
+/* end recentWork */
+/* start Quote */
+.quote,
+.quote p {
+  background-image: url(../media/images/img8.jpeg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+.carouselItem {
+  transition-delay: 0.5s;
+}
+.carouselIndicators li {
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.carouselIndicators li.active {
+  background-color: #fff;
+  border: none;
+}
+.brands span {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.5px;
+  color: #fff;
+}
+.swiperContainer {
+  cursor: grab;
+}
+/* End Quote */
+/* start Expert Design Advice */
+.expert {
+  background-color: #49629b;
+  color: #fff;
+  padding-top: 100px;
+}
+.expert .card {
+  background-color: #20232c;
+  padding-bottom: 50px;
+}
+.expert .card h5 {
+  color: #fa225b;
+  font-size: 28px;
+  cursor: pointer;
+  transition: s ease-in-out;
+}
+.expert .card h5:hover {
+  color: #fff;
+}
+/* end expert */
+/* start contact */
+.contact {
+  background-color: #ebeced;
+}
+.contact input {
+  font-size: 12px;
+  border-radius: none;
+}
+.contact input:focus,
+.contact button:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none;
+}
+
+.contact button {
+  background-color: #fa225b;
+  color: #fff;
+  font-size: 21px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: 0.4s ease-in-out;
+}
+.contact button:hover {
+  background-color: #fff;
+  color: #fa225b;
+}
